@@ -4,9 +4,9 @@ export default function SkillArsenal() {
       <div className="panel-header speech-bubble-alt center">
         <h2
           className="section-title bangers-text"
-          data-text="SKILL ARSENAL"
+          data-text="LATEST UPDATE PREVIEW"
         >
-          SKILL ARSENAL
+         LATEST UPDATE PREVIEW
         </h2>
       </div>
 
@@ -15,7 +15,7 @@ export default function SkillArsenal() {
           className="skill-item"
           style={{ "--skill-power": "90%", "--skill-color": "#FF4500" } as React.CSSProperties}
         >
-          <span className="skill-name permanent-marker-text">HTML & CSS</span>
+          <span className="skill-name permanent-marker-text">Character Arcs</span>
           <div className="power-bar">
             <div className="power-fill"></div>
           </div>
@@ -26,9 +26,9 @@ export default function SkillArsenal() {
 
         <li
           className="skill-item"
-          style={{ "--skill-power": "80%", "--skill-color": "#1E90FF" } as React.CSSProperties}
+          style={{ "--skill-power": "50%", "--skill-color": "#1E90FF" } as React.CSSProperties}
         >
-          <span className="skill-name permanent-marker-text">JavaScript</span>
+          <span className="skill-name permanent-marker-text">Panel Layout & Flow</span>
           <div className="power-bar">
             <div className="power-fill"></div>
           </div>
@@ -41,7 +41,7 @@ export default function SkillArsenal() {
           className="skill-item"
           style={{ "--skill-power": "70%", "--skill-color": "#32CD32" } as React.CSSProperties}
         >
-          <span className="skill-name permanent-marker-text">[Your Skill Here]</span>
+          <span className="skill-name permanent-marker-text">Speech & Thought Bubbles</span>
           <div className="power-bar">
             <div className="power-fill"></div>
           </div>

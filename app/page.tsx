@@ -20,9 +20,9 @@ export default function Home() {
 
   return (
     <main id="content-scroll">
-      <CharacterFile />
-      <PanelDivider text="NEXT PANEL..." />
       <StoryArcs />
+      <PanelDivider text="NEXT PANEL..." />
+      <CharacterFile />
       <PanelDivider text="POWERING UP..." dark />
       <SkillArsenal />
       <TransmitSignal />

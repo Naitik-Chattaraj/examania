@@ -4,9 +4,9 @@ export default function StoryArcs() {
       <div className="panel-header speech-bubble left pop-out">
         <h2
           className="section-title bangers-text"
-          data-text="STORY ARCS (Projects)"
+          data-text="THE 'OG' CAST"
         >
-          STORY ARCS (Projects)
+          THE 'OG' CAST
         </h2>
       </div>
 
@@ -14,13 +14,13 @@ export default function StoryArcs() {
         <article className="project-item">
           <div className="project-thumbnail-container">
             <img
-              src="https://placehold.co/400x280/222222/FFFFFF?text=Project+Alpha:+The+Awakening&font=bangers"
+              src="https://placehold.co/400x280/222222/FFFFFF?text=Character-1&font=bangers"
               alt="Project Alpha"
               className="project-thumbnail"
             />
             <div className="project-overlay">
               <h3 className="project-title permanent-marker-text">
-                Project Alpha: The Awakening
+                Character 1
               </h3>
               <span className="view-trigger" data-hover-sound="VIEW!">
                 VIEW!
@@ -30,11 +30,10 @@ export default function StoryArcs() {
 
           <div className="project-description handwritten-text">
             <p>
-              A tale of a nascent AI achieving sentience. Features dynamic blah
-              blah and impactful woosh!
+              Brief info about Character 1. Maybe their role or a catchphrase.
             </p>
             <a href="#" target="_blank" className="cta-button">
-              ENTER ARC <span className="arrow">&gt;</span>
+              ENTER HIS/HER WORLD <span className="arrow">&gt;</span>
             </a>
           </div>
         </article>
@@ -42,27 +41,26 @@ export default function StoryArcs() {
         <article className="project-item">
           <div className="project-thumbnail-container">
             <img
-              src="https://placehold.co/400x280/1a1a1a/FF4500?text=Project+Beta:+Cyberpunk+Chronicles&font=bangers"
-              alt="Project Beta"
+              src="https://placehold.co/400x280/1a1a1a/FF4500?text=Character-2&font=bangers"
+              alt="Character-2"
               className="project-thumbnail"
             />
             <div className="project-overlay">
               <h3 className="project-title permanent-marker-text">
-                Cyberpunk Chronicles
+                Character-2
               </h3>
-              <span className="view-trigger" data-hover-sound="ENGAGE!">
-                ENGAGE!
+              <span className="view-trigger" data-hover-sound="SHHHH!">
+                SHHHH!
               </span>
             </div>
           </div>
 
           <div className="project-description handwritten-text">
             <p>
-              Navigating the neon-drenched underbelly of a futuristic city.
-              Prepare for glitch effects!
+              Behind the mystery of Character-2. What makes them tick?
             </p>
             <a href="#" target="_blank" className="cta-button">
-              JACK IN <span className="arrow">&gt;</span>
+              UNCOVER THE SECRETS <span className="arrow">&gt;</span>
             </a>
           </div>
         </article>
@@ -70,13 +68,13 @@ export default function StoryArcs() {
         <article className="project-item">
           <div className="project-thumbnail-container">
             <img
-              src="https://placehold.co/400x280/333333/00FF00?text=Project+Gamma:+Mystic+Realms&font=bangers"
+              src="https://placehold.co/400x280/000/00FF00?text=Character-3&font=bangers"
               alt="Project Gamma"
               className="project-thumbnail"
             />
             <div className="project-overlay">
               <h3 className="project-title permanent-marker-text">
-                Mystic Realms Online
+                Character-3
               </h3>
               <span className="view-trigger" data-hover-sound="EXPLORE!">
                 EXPLORE!
@@ -86,11 +84,10 @@ export default function StoryArcs() {
 
           <div className="project-description handwritten-text">
             <p>
-              An illustrated interface for a fantasy world. User scrolls are
-              like ancient maps.
+              Explore the adventures of Character-3 and their unique traits.
             </p>
             <a href="#" target="_blank" className="cta-button">
-              DISCOVER <span className="arrow">&gt;</span>
+              DISCOVER HIM/HER <span className="arrow">&gt;</span>
             </a>
           </div>
         </article>

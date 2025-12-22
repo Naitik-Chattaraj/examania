@@ -19,9 +19,9 @@ html {
     --font-body: 'Short Stack', sans-serif; /* Fallback for readability */
 
     --color-ink: #1a1a1a; /* Off-black for a softer ink feel */
-    --color-paper: #f5f5f0; /* Slightly off-white paper */
-    --color-accent: #FF4500; /* Bright orange/red - CHANGE THIS! */
-    --color-accent-dark: #cc3700;
+    --color-paper: #ccd0db; /* Slightly off-white paper */
+    --color-accent: #008cff; /* Bright orange/red - CHANGE THIS! */
+    --color-accent-dark: #0003cc;
     --color-panel-border: var(--color-ink);
     --color-text-light: var(--color-paper);
     --panel-stroke-width: 5px; /* Base width for panel borders */
@@ -81,7 +81,7 @@ body {
 }
 .logo-container .main-title {
     font-family: var(--font-bangers);
-    font-size: clamp(3em, 10vw, 6em);
+    font-size: clamp(3em, 10vw, 20em);
     color: var(--color-ink);
     margin: 0;
     position: relative;
@@ -169,7 +169,7 @@ body {
 }
 .section-title {
     font-size: clamp(2.5em, 6vw, 4em);
-    color: var(--color-ink); /* Default for speech bubble BG */
+    color: white; /* Default for speech bubble BG */
     line-height: 1.1;
     padding: 10px 20px;
     display: inline-block;
@@ -193,6 +193,7 @@ body {
     color: var(--color-paper); /* Text color inside bubble */
     border-radius: .4em;
     padding: 10px 20px;
+    z-index: -1;
     display: inline-block;
     max-width: fit-content;
 }

@@ -105,8 +105,6 @@ export function useComicEffects() {
             text.split("").forEach((char, i) => {
               const span = document.createElement("span");
               span.textContent = char;
-              span.style.opacity = "0";
-              span.style.display = "inline-block";
               span.style.animation = `letterPopIn 0.5s ease-out ${i * 0.05}s forwards`;
               mainTitle.appendChild(span);
             });

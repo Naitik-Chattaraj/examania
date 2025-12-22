@@ -17,12 +17,10 @@ export default function TransmitSignal() {
           className="section-title bangers-text visible-mobile"
           data-text="SIGNAL"
         >
-          SIGNAL
         </h2>
 
         <p className="handwritten-text">
-          Need a hero for your next digital quest? Or just wanna share epic
-          fanart?
+Wanna collaborate or contribute to the comic? Reach out through any of the following channels!
         </p>
 
         <div className="contact-links">
@@ -31,7 +29,7 @@ export default function TransmitSignal() {
             className="contact-link"
             data-hover-sound="SEND!"
           >
-            <span className="icon">✉️</span> EMAIL SCROLL
+            <span className="icon">✍️</span> EMAIL SCROLL
           </a>
 
           <a
@@ -41,7 +39,7 @@ export default function TransmitSignal() {
             className="contact-link"
             data-hover-sound="CONNECT!"
           >
-            <span className="icon">✍️</span> GUEST ARTIST (LinkedIn)
+            <span className="icon">✉️</span> Subscribe to our Newsletter
           </a>
 
           <a
@@ -51,7 +49,7 @@ export default function TransmitSignal() {
             className="contact-link"
             data-hover-sound="UPLOAD!"
           >
-            <span className="icon">💾</span> DATA REPOSITORY (GitHub)
+            <span className="icon">💾</span> SHARE YOUR THOUGHTS!
           </a>
         </div>
 
