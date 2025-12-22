@@ -46,10 +46,10 @@ turning it into something fun, honest, and visually dynamic. It’s a reminder
  that even the most stressful moments can become stories worth laughing about later.
 
 </p>
-  <p className="handwritten-text">
+  {/* <p className="handwritten-text">
 Thanks for stepping into the world of Examania. 
 The story doesn’t end here—it’s only just getting started.
-  </p>
+  </p> */}
   
           <p className="screaming-text">
             <span>GET READY!</span>
