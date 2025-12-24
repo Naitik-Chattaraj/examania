@@ -24,7 +24,7 @@ export default function Home() {
       <PanelDivider text="NEXT PANEL..." />
       <CharacterFile />
       <PanelDivider text="POWERING UP..." dark />
-      <SkillArsenal />
+      {/* <SkillArsenal /> */}
       <TransmitSignal />
     </main>
   );

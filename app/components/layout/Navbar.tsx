@@ -14,7 +14,7 @@ export function Navbar() {
                 
                 <li><a href="#story-arcs" className="nav-link" data-hover-sound="SWIPE!">MEET THE CAST</a></li>
                 <li><a href="#character-file" className="nav-link " data-hover-sound="WHOOSH!">ABOUT THE AUTHOR</a></li>
-                <li><a href="#skill-arsenal" className="nav-link" data-hover-sound="POWER UP!">LATEST UPDATE PREVIEW</a></li>
+                {/* <li><a href="#skill-arsenal" className="nav-link" data-hover-sound="POWER UP!">LATEST UPDATE PREVIEW</a></li> */}
                 <li><a href="#transmit-signal" className="nav-link" data-hover-sound="PING!">CONTACT</a></li>
             </ul>
         </nav>

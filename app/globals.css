@@ -18,10 +18,10 @@ html {
     --font-handwritten: 'Kalam', cursive; /* or 'Short Stack' */
     --font-body: 'Short Stack', sans-serif; /* Fallback for readability */
 
-    --color-ink: #1a1a1a; /* Off-black for a softer ink feel */
-    --color-paper: #ccd0db; /* Slightly off-white paper */
-    --color-accent: #008cff; /* Bright orange/red - CHANGE THIS! */
-    --color-accent-dark: #0003cc;
+    --color-ink: #A88BCB; /* Off-black for a softer ink feel */
+    --color-paper: #291737; /* Slightly off-white paper */
+    --color-accent: #ffffff; /* Bright orange/red - CHANGE THIS! */
+    --color-accent-dark: #a791d3; /* Darker shade for hover effects */
     --color-panel-border: var(--color-ink);
     --color-text-light: var(--color-paper);
     --panel-stroke-width: 5px; /* Base width for panel borders */
@@ -32,18 +32,19 @@ html {
 
 body {
     font-family: var(--font-body);
-    background-color: var(--color-paper);
     color: var(--color-ink);
     margin: 0;
     padding: 0; /* Adjust if using full page borders */
     line-height: 1.6;
     overflow-x: hidden;
-    background-image: /* Subtle halftone dot pattern */
-        radial-gradient(var(--color-ink) 0.5px, transparent 0.5px),
-        radial-gradient(var(--color-ink) 0.5px, var(--color-paper) 0.5px);
-    background-size: 10px 10px;
-    background-position: 0 0, 5px 5px;
-    background-attachment: fixed; /* So pattern doesn't scroll */
+    background:
+        linear-gradient(to bottom, #291737,#402058, #a88bcb00);
+        /* radial-gradient(var(--color-ink) 0.5px, transparent 0.5px),
+        radial-gradient(var(--color-ink) 0.5px, var(--color-paper) 0.5px); */
+
+    background-size: auto, 10px 10px, 10px 10px;
+    background-position: 0 0, 0 0, 5px 5px;
+    background-attachment: fixed;
 }
 .ink-splatter-cursor {
     cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='32' height='32' viewBox='0 0 24 24' fill='%231a1a1a'><path d='M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm0 22c-5.514 0-10-4.486-10-10s4.486-10 10-10 10 4.486 10 10-4.486 10-10 10zm5.707-13.707l-8.414 8.414-2.828-2.828-1.414 1.414 4.242 4.242 9.828-9.828-1.414-1.414z' opacity='0'/><circle cx='12' cy='12' r='3' /><path d='M12 5c-1.657 0-3 1.343-3 3s1.343 3 3 3 3-1.343 3-3-1.343-3-3-3zm-5.967 8.532c-.439.228-.978.112-1.299-.255-.32-.366-.267-.908.123-1.203l2.187-1.634c.39-.295.932-.242 1.299.125.366.367.313.908-.077 1.203l-2.233 1.764zM17.967 13.532c.439.228.978.112 1.299-.255.32-.366.267-.908-.123-1.203l-2.187-1.634c-.39-.295-.932-.242-1.299.125-.366.367-.313.908.077 1.203l2.233 1.764z'/></svg>") 16 16, auto;
@@ -51,7 +52,7 @@ body {
 }
 .page-border-overlay { /* To simulate thick page borders */
     position: fixed;
-    background-color: var(--color-paper); /* Match body, or a contrasting border color */
+background: linear-gradient(to bottom, #291737,#402058, #9670c58a);
     border: 10px solid var(--color-ink);
     z-index: 100;
     pointer-events: none; /* So they don't block content */
@@ -96,7 +97,7 @@ body {
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%) skewX(-5deg) scale(1.05);
-    color: var(--color-accent);
+    color: #8149db;
     z-index: 0;
     opacity: 0.8;
     white-space: nowrap; /* Ensure data-content doesn't wrap */
@@ -169,11 +170,12 @@ body {
 }
 .section-title {
     font-size: clamp(2.5em, 6vw, 4em);
-    color: white; /* Default for speech bubble BG */
+    color: rgb(119, 85, 182) !important; /* Default for speech bubble BG */
     line-height: 1.1;
     padding: 10px 20px;
     display: inline-block;
     position: relative;
+    z-index: 2;
 }
 .section-title[data-text]::after { /* Screaming text style on headers */
     content: attr(data-text);
@@ -637,4 +639,37 @@ body {
     #title-sequence .main-title {font-size: clamp(2em, 10vw, 3em); }
     .section-title {font-size: clamp(1.8em, 6vw, 3em); }
     .nav-link { font-size: clamp(1em, 3vw, 1.5em); padding: 5px 8px;}
+}
+.newsletter-form {
+  width: 100%;
+}
+
+.newsletter-input {
+  border: none;
+  background: transparent;
+  font-family: var(--font-marker);
+  font-size: 1.05em;
+  outline: none;
+  margin-left: 8px;
+  width: 55%;
+}
+
+.newsletter-button {
+  font-family: var(--font-bangers);
+  margin-left: auto;
+  background: var(--color-accent);
+  color: var(--color-paper);
+  border: 2px solid var(--color-ink);
+  padding: 6px 14px;
+  cursor: pointer;
+  box-shadow: 2px 2px 0 var(--color-ink);
+}
+
+.newsletter-button:hover {
+  transform: translate(-2px, -2px);
+  box-shadow: 4px 4px 0 var(--color-ink);
+}
+.newsletter-button:active {
+  transform: translate(0, 0);
+  box-shadow: 2px 2px 0 var(--color-ink);
 }
